@@ -205,8 +205,8 @@ Transform:
   m_GameObject: {fileID: 518652309}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.444, y: 10.09, z: 0}
-  m_LocalScale: {x: 24.842503, y: 0.2642715, z: 1}
+  m_LocalPosition: {x: -0.485, y: 10.09, z: 0}
+  m_LocalScale: {x: 24.842503, y: 0.3858364, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1262250487}
@@ -317,7 +317,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.07
+  orthographic size: 8.42
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -589,7 +589,7 @@ MonoBehaviour:
   minPos: -7.17
   maxPos: 7.3
   minSpeed: 8
-  maxSpeed: 15
+  maxSpeed: 18
 --- !u!212 &953835793
 SpriteRenderer:
   serializedVersion: 3
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03a0954a264ce246b75e2bd4cc0690c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Move
-  speed: 11
+  speed: 13
 --- !u!1001 &618003569058915566
 PrefabInstance:
   m_ObjectHideFlags: 0
