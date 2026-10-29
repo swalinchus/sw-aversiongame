@@ -14,4 +14,12 @@ public class EnemyScript : MonoBehaviour
     {
         transform.position += new Vector3(1, 0, 0) * speed * Time.fixedDeltaTime;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+       if (other.CompareTag ("Boundary"))
+       {
+            Destroy(gameObject);
+       }
+    }
 }
