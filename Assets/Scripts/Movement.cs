@@ -1,9 +1,15 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.UIElements;
 
 public class Movement : MonoBehaviour
 {
     private Vector2 move;
+    public UIDocument uiDocument;
+    public GameObject explosionEffect;
     public float speed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -12,7 +18,13 @@ public class Movement : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             gameObject.SetActive(false);
+            Instantiate(explosionEffect, transform.position, transform.rotation);
         }
+    }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void Start()
@@ -30,4 +42,3 @@ public class Movement : MonoBehaviour
         move = input.Get<Vector2>();
     }
 }
-
