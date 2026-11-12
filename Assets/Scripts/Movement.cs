@@ -8,7 +8,6 @@ using UnityEngine.UIElements;
 public class Movement : MonoBehaviour
 {
     private Vector2 move;
-    public UIDocument uiDocument;
     public GameObject explosionEffect;
     public float speed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
